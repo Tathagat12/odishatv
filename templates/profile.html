@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block body %}
+{% load static%}
+<div class="containerfluid mt-">
+    <center><h1>WELLCOME  {{request.user.first_name}} {{request.user.last_name}}</h1>
+        <div class="container" style="border-radius: 50%;"> 
+            <img src="{% static 'images/p1.jpg' %}" alt="" style="height: 320px;width:220px;border-radius: 50%;border-color:#FF4500;border-style:solid;">
+        </div>
+        <h2>Successfully logedd</h2>
+         <h3>Thanks for viste our website </h3>   
+    </center>
+<div>   
+{% endblock body %}

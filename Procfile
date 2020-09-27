@@ -1,0 +1,1 @@
+web: gunicorn codigunda.wsgi --log-file -
