@@ -77,9 +77,9 @@
           </div>
           <div class="col-12 col-lg-6 ml-auto d-flex">
             <div class="ml-md-auto top-social d-none d-lg-inline-block">
-              <a href="#" class="d-inline-block p-3"  ><span class="icon-facebook h3" style="color:blue;"></span></a>
-                <a href="#" class="d-inline-block p-3"><span class="icon-twitter h3"  style="color:#4e85f3;"></span></a>
-                <a href="#" class="d-inline-block p-3"><span class="icon-instagram h3" style="color:#a04e69; "></span></a>
+              <a href="https://www.facebook.com/otvnews/" class="d-inline-block p-3"  ><span class="icon-facebook h3" style="color:blue;"></span></a>
+                <a href="https://twitter.com/otvnews?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="d-inline-block p-3"><span class="icon-twitter h3"  style="color:#4e85f3;"></span></a>
+                <a href="https://twitter.com/otvnews?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="d-inline-block p-3"><span class="icon-instagram h3" style="color:#a04e69; "></span></a>
             </div>
             <form action="{% url 'search' %}" class="search-form d-inline-block" method="GET"> 
 
@@ -114,7 +114,7 @@
                   <li>
                     <a href="{% url 'about' %}" class="nav-link text-left" style="color:white;text-shadow:1px 1px black;">About</a>
                   </li>
-                  <li><a href="{% url 'categories' %}" class="nav-link text-left" style="color:white;text-shadow:1px 1px black;">categories</a></li>
+                  
                
                 <li><a href="{% url 'contact' %}" class="nav-link text-left" style="color:white;text-shadow:1px 1px black;">Contact</a></li>
                 {% if user.is_authenticated %}
