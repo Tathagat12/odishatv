@@ -10,8 +10,20 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
+
+
+
 from pathlib import Path
 import os
+from .email_info import EMAIL_USE_TLS,EMAIL_HOST,EMAIL_HOST_USER,EMAIL_HOST_PASSWORD,EMAIL_PORT
+
+
+
+EMAIL_USE_TLS=EMAIL_USE_TLS
+EMAIL_HOST=EMAIL_HOST
+EMAIL_HOST_USER=EMAIL_HOST_USER
+EMAIL_HOST_PASSWORD=EMAIL_HOST_PASSWORD
+EMAIL_PORT= EMAIL_PORT
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
@@ -188,7 +200,7 @@ SITE_ID = 1
 
 EMAIL_BACKEND='django.core.mail.backends.console.EmailBackend'
 
-ACCOUNT_EMAIL_REQUIRED=True
+ACCOUNT_EMAIL_REQUIRED=False
 
-ACCOUNT_EMAIL_VERIFICATION=True
+ACCOUNT_EMAIL_VERIFICATION=False
 CRISPY_TEMPLATE_PACK = 'bootstrap4'

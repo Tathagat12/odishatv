@@ -6,6 +6,10 @@ from django.db.models import Q
 from django.http import Http404
 from django.contrib.auth.models import User
 from django.contrib.auth.decorators import login_required
+from django.contrib import messages
+from django.core.mail import send_mail
+from django.conf import settings
+
 
 # Create your views here.
 def index(request):
